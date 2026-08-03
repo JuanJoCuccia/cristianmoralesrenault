@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristian Morales | Asesor Renault 0 km en Mendoza</title>
+  <meta name="description" content="Asesoramiento personalizado para comprar tu Renault 0 km en Mendoza. Consultá modelos, financiación, entrega y toma de usado por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f4f1;
+      --surface: #fcfbf8;
+      --surface-2: #f0ede7;
+      --text: #1f2328;
+      --muted: #5f6670;
+      --primary: #1e2a38;
+      --primary-2: #2c3e50;
+      --accent: #d9a404;
+      --accent-hover: #b98a03;
+      --line: rgba(31, 35, 40, 0.12);
+      --success: #6e8b74;
+      --shadow: 0 12px 32px rgba(31,35,40,.08);
+      --radius: 20px;
+      --radius-sm: 14px;
+      --max: 1180px;
+      --wa: 5492610000000;
+      --wa-msg: "Hola Cristian, quiero recibir asesoramiento para comprar un Renault 0 km.";
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: min(calc(100% - 2rem), var(--max)); margin: 0 auto; }
+    .section { padding: 84px 0; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: rgba(217,164,4,.12);
+      color: var(--primary);
+      border-radius: 999px;
+      font-size: .88rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .title {
+      margin: 18px 0 14px;
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+    .subtitle {
+      font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+      color: var(--muted);
+      max-width: 62ch;
+    }
+    .section-title {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+    }
+    .section-copy {
+      color: var(--muted);
+      max-width: 68ch;
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: .2s ease;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #161616;
+      box-shadow: var(--shadow);
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent;
+      border-color: var(--line);
+      color: var(--primary);
+    }
+    .btn-secondary:hover { background: rgba(30,42,56,.04); }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(245,244,241,.88);
+      border-bottom: 1px solid rgba(31,35,40,.08);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 76px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 800;
+      font-family: 'Manrope', sans-serif;
+      box-shadow: var(--shadow);
+    }
+    .brand-text strong { display: block; font-size: .98rem; }
+    .brand-text span { display: block; font-size: .88rem; color: var(--muted); }
+
+    .hero {
+      padding: 48px 0 72px;
+      background:
+        radial-gradient(circle at top right, rgba(217,164,4,.12), transparent 28%),
+        linear-gradient(180deg, #f9f7f3 0%, var(--bg) 100%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 34px;
+      align-items: center;
+    }
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid rgba(31,35,40,.08);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 26px;
+    }
+    .point {
+      padding: 14px;
+      background: var(--surface-2);
+      border-radius: 16px;
+      border: 1px solid rgba(31,35,40,.06);
+      font-size: .95rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .portrait {
+      min-height: 100%;
+      border-radius: 28px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #dfe5ea 0%, #c8d1da 100%);
+      border: 1px solid rgba(31,35,40,.08);
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+    .portrait-inner {
+      min-height: 620px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 28px;
+      background:
+        linear-gradient(180deg, rgba(30,42,56,.02) 0%, rgba(30,42,56,.48) 100%),
+        url('cristian-morales.jpeg') center top/cover no-repeat;
+      color: white;
+    }
+    .brand-logos {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:18px;
+    }
+    .logo-chip {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.18);
+      font-size:.84rem;
+      font-weight:700;
+      letter-spacing:.02em;
+      backdrop-filter:blur(6px);
+    }
+    .portrait-inner small {
+      display: inline-block;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 8px 12px;
+      border-radius: 999px;
+      width: fit-content;
+      margin-bottom: 14px;
+      backdrop-filter: blur(6px);
+    }
+    .portrait-inner h2 {
+      margin: 0 0 10px;
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(1.7rem, 2vw, 2.2rem);
+      line-height: 1.05;
+    }
+    .portrait-inner p { margin: 0; max-width: 38ch; color: rgba(255,255,255,.88); }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(31,35,40,.04);
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.15;
+    }
+    .card p { margin: 0; color: var(--muted); }
+
+    .trust-box {
+      padding: 28px;
+      background: linear-gradient(180deg, #fffefb 0%, #f7f3ea 100%);
+      border: 1px solid rgba(217,164,4,.18);
+      border-radius: 24px;
+    }
+
+    .model-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 0;
+    }
+    .model-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .model-content { padding: 22px; }
+    .model-content p { margin-bottom: 18px; }
+
+    .testimonial {
+      background: #fffefb;
+      border: 1px solid rgba(31,35,40,.08);
+      border-radius: 24px;
+      padding: 24px;
+    }
+    .testimonial p {
+      margin: 0 0 16px;
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .testimonial strong {
+      display: block;
+      font-size: .96rem;
+      color: var(--primary);
+    }
+    .testimonial span {
+      display: block;
+      color: var(--muted);
+      font-size: .92rem;
+      margin-top: 4px;
+    }
+
+    .faq details {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 20px;
+    }
+    .faq details + details { margin-top: 14px; }
+    .faq summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq .answer {
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .cta-strip {
+      background: linear-gradient(135deg, var(--primary) 0%, #2d4054 100%);
+      color: white;
+      border-radius: 28px;
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1.2fr auto;
+      gap: 18px;
+      align-items: center;
+    }
+    .cta-strip p { margin: 10px 0 0; color: rgba(255,255,255,.82); }
+
+    footer {
+      padding: 36px 0 100px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 60;
+      box-shadow: 0 18px 34px rgba(31,35,40,.18);
+    }
+
+    .disclaimer {
+      font-size: .88rem;
+      color: var(--muted);
+      margin-top: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .cta-strip { grid-template-columns: 1fr; }
+      .hero-points { grid-template-columns: 1fr; }
+      .portrait-inner { min-height: 420px; }
+      .nav { min-height: 70px; }
+    }
+
+    @media (max-width: 640px) {
+      .section { padding: 68px 0; }
+      .hero { padding-top: 26px; }
+      .hero-card, .card, .trust-box, .cta-strip { padding: 22px; }
+      .brand-text span { display: none; }
+      .btn { width: 100%; }
+      .hero-cta { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <div class="brand-mark">CM</div>
+        <div class="brand-text">
+          <strong>Cristian Morales</strong>
+          <span>Asesor Renault 0 km · Mendoza</span>
+        </div>
+      </a>
+      <a class="btn btn-primary" id="wa-header" target="_blank" rel="noopener noreferrer" href="#">Hablar por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <span class="eyebrow">Renault Mediterráneo · Mendoza</span>
+          <h1 class="title">Encontrá tu Renault 0 km con asesoramiento claro, atención personalizada y respuesta rápida.</h1>
+          <p class="subtitle">Soy Cristian Morales, asesor de ventas de 0 km. Te acompaño para que elijas el modelo indicado, conozcas tus opciones y avances con información simple, cercana y confiable desde el primer contacto.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero recibir asesoramiento para comprar un Renault 0 km." target="_blank" rel="noopener noreferrer" href="#">Hablar por WhatsApp</a>
+            <a class="btn btn-secondary" href="#modelos">Ver modelos destacados</a>
+          </div>
+          <div class="hero-points">
+            <div class="point">Atención personalizada desde el primer mensaje.</div>
+            <div class="point">Orientación clara sobre modelos, opciones y proceso.</div>
+            <div class="point">Respuesta ágil por WhatsApp para avanzar más rápido.</div>
+          </div>
+        </div>
+
+        <div class="portrait" aria-hidden="true">
+          <div class="portrait-inner">
+            <small>Atención cercana y acompañamiento real</small>
+            <h2>Tu próxima compra puede ser mucho más simple cuando te acompaña la persona correcta.</h2>
+            <p>No se trata solo de mostrarte un auto. Se trata de ayudarte a tomar una buena decisión con claridad, seguimiento y confianza.</p>
+            <div class="brand-logos">
+              <span class="logo-chip">Renault</span>
+              <span class="logo-chip">Mediterráneo Mendoza</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <span class="eyebrow">Confianza y decisión</span>
+          <h2 class="section-title">No se trata solo de comprar un 0 km. Se trata de elegir bien.</h2>
+          <p class="section-copy">Comprar un vehículo es una decisión importante. Por eso, mi trabajo no es solo mostrarte modelos, sino ayudarte a evaluar qué Renault se adapta mejor a tu necesidad, tu presupuesto y el uso que le vas a dar.</p>
+          <p class="section-copy" style="margin-top:16px;">Desde la primera consulta hasta el cierre de la operación, vas a contar con atención cercana, respuestas claras y seguimiento personalizado para que avances con seguridad en cada paso.</p>
+        </div>
+        <div class="trust-box">
+          <h3 style="margin-top:0; font-family:'Manrope',sans-serif; font-size:1.4rem; line-height:1.1;">¿Qué vas a encontrar en este asesoramiento?</h3>
+          <div class="grid-2" style="gap:14px; margin-top:18px;">
+            <div class="card" style="padding:18px;"><p>Atención personalizada desde el primer contacto.</p></div>
+            <div class="card" style="padding:18px;"><p>Explicaciones claras, sin vueltas ni presión innecesaria.</p></div>
+            <div class="card" style="padding:18px;"><p>Acompañamiento real durante todo el proceso.</p></div>
+            <div class="card" style="padding:18px;"><p>Respuesta rápida por WhatsApp para resolver dudas concretas.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <span class="eyebrow">Cómo te ayudo</span>
+        <h2 class="section-title">Te acompaño en cada etapa de la compra.</h2>
+        <p class="section-copy">Cada cliente llega con una necesidad distinta. Por eso, el asesoramiento tiene que ser concreto, claro y útil desde el primer momento.</p>
+        <div class="grid-3" style="margin-top:28px;">
+          <article class="card">
+            <h3>Elegir el modelo adecuado</h3>
+            <p>Te oriento para encontrar el Renault que mejor se ajusta a tu uso, tus expectativas y tu presupuesto.</p>
+          </article>
+          <article class="card">
+            <h3>Conocer opciones de compra</h3>
+            <p>Te explico de manera simple las alternativas para que evalúes con claridad cuál puede convenirte más.</p>
+          </article>
+          <article class="card">
+            <h3>Consultar disponibilidad y entrega</h3>
+            <p>Podés consultar por modelos, versiones, tiempos y posibilidades reales según el momento.</p>
+          </article>
+          <article class="card">
+            <h3>Evaluar toma de usado</h3>
+            <p>Si tenés un vehículo para entregar, también puedo orientarte para analizar esa opción.</p>
+          </article>
+          <article class="card">
+            <h3>Resolver dudas concretas</h3>
+            <p>Mi objetivo es que entiendas bien cada paso y puedas avanzar con más seguridad.</p>
+          </article>
+          <article class="card">
+            <h3>Seguimiento personalizado</h3>
+            <p>No queda todo en una primera charla. Hago seguimiento para ayudarte a concretar mejor tu decisión.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modelos">
+      <div class="container">
+        <span class="eyebrow">Modelos destacados</span>
+        <h2 class="section-title">Modelos Renault que podés consultar hoy.</h2>
+        <p class="section-copy">Estos son algunos de los tipos de vehículos y líneas que hoy ayudan a ordenar la consulta inicial. Si estás evaluando otra opción de Renault, también podés escribirme por WhatsApp para orientarte mejor.</p>
+        <div class="grid-3" style="margin-top:28px;">
+          <article class="card model-card">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80" alt="Vehículo Renault estilo SUV compacto" width="1200" height="800" loading="lazy">
+            <div class="model-content">
+              <h3>Renault Kardian</h3>
+              <p>Consultá por versiones, disponibilidad y opciones de compra para uno de los lanzamientos más buscados.</p>
+              <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero consultar por Renault Kardian." target="_blank" rel="noopener noreferrer" href="#">Consultar por Kardian</a>
+            </div>
+          </article>
+          <article class="card model-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Vehículo Renault estilo SUV" width="1200" height="800" loading="lazy">
+            <div class="model-content">
+              <h3>Renault Duster</h3>
+              <p>Una opción muy consultada por espacio, versatilidad y uso familiar o mixto.</p>
+              <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero consultar por Renault Duster." target="_blank" rel="noopener noreferrer" href="#">Consultar por Duster</a>
+            </div>
+          </article>
+          <article class="card model-card">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=80" alt="Vehículo Renault estilo sedán" width="1200" height="800" loading="lazy">
+            <div class="model-content">
+              <h3>Renault Logan</h3>
+              <p>Ideal para quienes buscan practicidad, espacio interior y una opción funcional para el día a día.</p>
+              <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero consultar por Renault Logan." target="_blank" rel="noopener noreferrer" href="#">Consultar por Logan</a>
+            </div>
+          </article>
+          <article class="card model-card">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" alt="Vehículo Renault estilo hatchback" width="1200" height="800" loading="lazy">
+            <div class="model-content">
+              <h3>Renault Sandero</h3>
+              <p>Una alternativa muy elegida por quienes priorizan equilibrio entre comodidad y practicidad urbana.</p>
+              <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero consultar por Renault Sandero." target="_blank" rel="noopener noreferrer" href="#">Consultar por Sandero</a>
+            </div>
+          </article>
+          <article class="card model-card">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=80" alt="Vehículo Renault estilo crossover" width="1200" height="800" loading="lazy">
+            <div class="model-content">
+              <h3>Renault Stepway</h3>
+              <p>Consultá por esta versión si buscás una propuesta versátil y con impronta aventurera.</p>
+              <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero consultar por Renault Stepway." target="_blank" rel="noopener noreferrer" href="#">Consultar por Stepway</a>
+            </div>
+          </article>
+          <article class="card model-card">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Vehículo Renault utilitario" width="1200" height="800" loading="lazy">
+            <div class="model-content">
+              <h3>Renault Kangoo</h3>
+              <p>Una opción muy consultada por familias, trabajo y necesidades de espacio.</p>
+              <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero consultar por Renault Kangoo." target="_blank" rel="noopener noreferrer" href="#">Consultar por Kangoo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container grid-2">
+        <div class="card" style="background:linear-gradient(180deg,#fffefb 0%,#f4efe4 100%);">
+          <span class="eyebrow">Opciones y proceso</span>
+          <h2 class="section-title" style="font-size:clamp(1.6rem,2.6vw,2.2rem); margin-top:16px;">Más claridad para evaluar tu compra.</h2>
+          <p class="section-copy">Muchas veces la duda no pasa solo por el vehículo, sino por cómo avanzar de la mejor manera. Por eso, también te acompaño para revisar alternativas, tiempos y opciones concretas según tu situación.</p>
+          <p class="section-copy" style="margin-top:16px;">La idea es que puedas hacer tu consulta con tranquilidad y recibir una orientación clara para decidir mejor.</p>
+          <div class="hero-cta" style="margin-top:22px;">
+            <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero recibir orientación para evaluar mi compra de un Renault 0 km." target="_blank" rel="noopener noreferrer" href="#">Quiero recibir orientación</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="font-size:1.35rem;">Consultas frecuentes que podés hacer por WhatsApp</h3>
+          <div class="grid-2" style="margin-top:18px; gap:14px;">
+            <div class="card" style="padding:18px;"><p>Quiero saber qué vehículo puede adaptarse mejor a mi familia.</p></div>
+            <div class="card" style="padding:18px;"><p>Quiero consultar opciones vigentes para mi próxima compra.</p></div>
+            <div class="card" style="padding:18px;"><p>Tengo un usado y quiero evaluar si puedo incluirlo.</p></div>
+            <div class="card" style="padding:18px;"><p>Necesito saber qué disponibilidad o alternativas hay hoy.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Clientes satisfechos</span>
+        <h2 class="section-title">Personas que valoraron la atención, la claridad y el acompañamiento.</h2>
+        <p class="section-copy">Estas recomendaciones son de ejemplo hasta cargar testimonios reales. La estructura ya está lista para reemplazarlas apenas Cristian reciba las opiniones definitivas de sus clientes.</p>
+        <div class="grid-3" style="margin-top:28px;">
+          <article class="testimonial">
+            <p>“Desde el primer momento me atendió con mucha claridad. Me ayudó a ordenar la decisión y me sentí acompañado en todo el proceso.”</p>
+            <strong>María González</strong>
+            <span>Compra de Renault 0 km · Mendoza</span>
+          </article>
+          <article class="testimonial">
+            <p>“Lo que más valoro fue la forma de explicar cada paso. Siempre respondió rápido y con muy buena predisposición.”</p>
+            <strong>Javier Lucero</strong>
+            <span>Cliente particular · Godoy Cruz</span>
+          </article>
+          <article class="testimonial">
+            <p>“No sentí presión para comprar. Sentí que realmente quería ayudarme a elegir bien y eso hizo toda la diferencia.”</p>
+            <strong>Paula Sosa</strong>
+            <span>Compra familiar · Guaymallén</span>
+          </article>
+          <article class="testimonial">
+            <p>“Muy buena atención, seguimiento y respuesta. Terminamos muy conformes con toda la experiencia.”</p>
+            <strong>Federico Arena</strong>
+            <span>Cliente de Mendoza</span>
+          </article>
+          <article class="testimonial">
+            <p>“Es de esas personas que te transmiten confianza. Explicó todo con paciencia y estuvo atento hasta el cierre.”</p>
+            <strong>Laura Martínez</strong>
+            <span>Consulta y compra de 0 km · Maipú</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container faq">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2 class="section-title">Respuestas simples para las dudas más comunes.</h2>
+        <details open>
+          <summary>¿Puedo consultar aunque todavía no tenga definido el modelo?</summary>
+          <div class="answer">Sí. La idea es justamente ayudarte a evaluar cuál puede ser la opción más adecuada según tu necesidad, tu presupuesto y el uso que le vas a dar.</div>
+        </details>
+        <details>
+          <summary>¿Puedo escribir por WhatsApp solo para sacarme una duda puntual?</summary>
+          <div class="answer">Sí. Podés consultar por modelos, proceso, disponibilidad o cualquier duda concreta. La atención está pensada para orientarte con claridad desde el inicio.</div>
+        </details>
+        <details>
+          <summary>¿También puedo consultar si tengo un usado?</summary>
+          <div class="answer">Sí. Si tenés un vehículo y querés evaluar alternativas, podés comentarlo en tu mensaje para analizar tu caso.</div>
+        </details>
+        <details>
+          <summary>¿Atienden clientes de Mendoza y alrededores?</summary>
+          <div class="answer">Sí. Esta landing está enfocada principalmente en clientes de Mendoza y zonas cercanas.</div>
+        </details>
+        <details>
+          <summary>¿Cuál es la forma más rápida de contacto?</summary>
+          <div class="answer">WhatsApp es la vía principal y más directa para iniciar la conversación y recibir una respuesta ágil.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-strip">
+          <div>
+            <h2 class="section-title" style="margin:0; color:white; font-size:clamp(1.7rem,3vw,2.5rem);">Si estás evaluando tu próximo Renault 0 km, hablemos.</h2>
+            <p>Escribime por WhatsApp y contame qué estás buscando. Te respondo de manera clara, personalizada y orientada a ayudarte a avanzar.</p>
+          </div>
+          <div>
+            <a class="btn btn-primary wa-link" data-message="Hola Cristian, quiero hablar con vos para evaluar mi próximo Renault 0 km." target="_blank" rel="noopener noreferrer" href="#">Hablar ahora por WhatsApp</a>
+          </div>
+        </div>
+        <p class="disclaimer">Sitio informativo de contacto comercial. Las condiciones, versiones y disponibilidad pueden variar según el momento de la consulta.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong style="color:var(--text); display:block; margin-bottom:8px;">Cristian Morales</strong>
+      <div>Asesor Comercial Renault 0 km · Renault Mediterráneo · Mendoza</div>
+      <div style="margin-top:10px;">Dominios en registración: cristianmoralesrenault.com.ar y renaultconcristian.com.ar</div>
+      <div style="margin-top:10px;">Esta landing fue pensada para GitHub Pages, con WhatsApp como canal principal de contacto para una experiencia más rápida y directa.</div>
+    </div>
+  </footer>
+
+  <a class="btn btn-primary whatsapp-float wa-link" data-message="Hola Cristian, quiero recibir asesoramiento para comprar un Renault 0 km." target="_blank" rel="noopener noreferrer" href="#" aria-label="Abrir WhatsApp para hablar con Cristian">WhatsApp</a>
+
+  <script>
+    const phone = '5492616176513';
+
+    function createWaLink(message) {
+      return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    }
+
+    document.querySelectorAll('.wa-link').forEach(link => {
+      const message = link.dataset.message || 'Hola Cristian, quiero recibir asesoramiento para comprar un Renault 0 km.';
+      link.href = createWaLink(message);
+    });
+
+    document.getElementById('wa-header').href = createWaLink('Hola Cristian, quiero recibir asesoramiento para comprar un Renault 0 km.');
+  </script>
+</body>
+</html>
