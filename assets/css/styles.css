@@ -377,7 +377,8 @@ h3 {
 }
 
 .hero-card strong {
-  font-size: 0.97rem;
+  font-size: 1.08rem;
+  font-weight: 800;
 }
 
 .section-heading {
@@ -519,7 +520,9 @@ h3 {
 .model-card > img {
   width: 100%;
   aspect-ratio: 1.62 / 1;
-  object-fit: cover;
+  object-fit: contain;
+  background: #f0f0ee;
+  padding: 12px 16px;
 }
 
 .model-content {
