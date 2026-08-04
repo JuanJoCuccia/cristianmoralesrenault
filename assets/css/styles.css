@@ -377,8 +377,14 @@ h3 {
 }
 
 .hero-card strong {
-  font-size: 1.08rem;
+  font-size: 0.95rem;
   font-weight: 800;
+  display: block;
+}
+
+.hero-card-label,
+.hero-card span {
+  font-size: 0.75rem;
 }
 
 .section-heading {
@@ -1053,9 +1059,8 @@ h3 {
   }
 
   .hero-card {
-    bottom: 16px;
-    left: 14px;
-    padding: 14px 15px;
+  padding: 12px 18px;
+  display: inline-block;
   }
 
   .section-heading {
