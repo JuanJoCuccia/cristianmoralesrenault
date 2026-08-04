@@ -380,11 +380,14 @@ h3 {
   font-size: 0.95rem;
   font-weight: 800;
   display: block;
+  margin-bottom: 2px;   /* ← reduce el espacio entre nombre y cargo */
+  line-height: 1.2;
 }
 
-.hero-card-label,
-.hero-card span {
+.hero-card span,
+.hero-card-label {
   font-size: 0.75rem;
+  line-height: 1.2;
 }
 
 .section-heading {
@@ -1059,9 +1062,8 @@ h3 {
   }
 
   .hero-card {
-  padding: 8px 12px;
-  display: inline-block;
-  }
+    padding: 8px 18px;
+  }  
 
   .section-heading {
     margin-bottom: 33px;
