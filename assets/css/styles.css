@@ -114,11 +114,15 @@ button {
 .brand-logo {
   width: auto;
   max-height: 34px;
+}
+
+.brand-logo-renault {
   filter: brightness(0) invert(1);
 }
 
 .brand-logo-mediterraneo {
   max-width: 132px;
+  filter: none;
 }
 
 .brand-divider {
