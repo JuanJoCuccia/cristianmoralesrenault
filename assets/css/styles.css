@@ -1208,18 +1208,20 @@ h3 {
   padding-bottom: 32px;
 }
 .promo-banner {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
+  width: fit-content;
   margin: 42px auto 0;
   padding: 16px 32px;
-  background: #d71920;
+  background: #f4bb16;
   border-radius: 8px;
-  color: #fff;
+  color: #1b1b1b;
   font-size: 1.08rem;
   font-weight: 700;
   letter-spacing: 0.01em;
-  box-shadow: 0 8px 24px rgba(215, 25, 32, 0.28);
+  box-shadow: 0 8px 24px rgba(244, 187, 22, 0.35);
 }
 
 .promo-banner-text strong {
@@ -1229,6 +1231,6 @@ h3 {
 }
 
 .promo-banner-icon {
-  color: #f4bb16;
+  color: #d71920;
   font-size: 1.1rem;
 }
