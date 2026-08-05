@@ -1243,3 +1243,15 @@ a.promo-banner:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(244, 187, 22, 0.45);
 }
+.finance-flyer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finance-flyer img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
