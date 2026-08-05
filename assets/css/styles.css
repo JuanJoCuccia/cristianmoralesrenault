@@ -1234,3 +1234,12 @@ h3 {
   color: #d71920;
   font-size: 1.1rem;
 }
+a.promo-banner {
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+a.promo-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(244, 187, 22, 0.45);
+}
